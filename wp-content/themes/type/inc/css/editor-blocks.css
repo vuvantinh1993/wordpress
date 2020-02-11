@@ -1,0 +1,341 @@
+/*
+Theme Name: Type
+Description: Used to style blocks in the editor.
+*/
+
+/* 
+ * 01: Typography 
+ */
+
+.edit-post-visual-editor .editor-block-list__block,
+.editor-default-block-appender textarea.editor-default-block-appender__content {
+	font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.75;
+}
+
+.edit-post-visual-editor .editor-block-list__block {
+	color: #222;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	color: #000;
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.edit-post-visual-editor h1,
+.edit-post-visual-editor h2,
+.edit-post-visual-editor h3,
+.edit-post-visual-editor h4 {
+	color: #000;
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.edit-post-visual-editor h1 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.edit-post-visual-editor h2 {
+	font-size: 28px;
+	line-height: 1.25;
+}
+
+.edit-post-visual-editor h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.edit-post-visual-editor h4 {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.edit-post-visual-editor h5 {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.edit-post-visual-editor h6 {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.edit-post-visual-editor h1:first-child,
+.edit-post-visual-editor h2:first-child,
+.edit-post-visual-editor h3:first-child,
+.edit-post-visual-editor h4:first-child,
+.edit-post-visual-editor h5:first-child,
+.edit-post-visual-editor h6:first-child {
+	margin-top: 0;
+}
+
+.edit-post-visual-editor .has-large-font-size,
+.edit-post-visual-editor .has-larger-font-size {
+	line-height: 1.25;
+}
+
+/* 
+ * 02: Block Settings
+ */
+
+.edit-post-visual-editor {
+	max-width: 100% !important; /* Override where editor-style.css is affecting this */
+}
+
+.wp-block {
+	max-width: 790px; /* 760px + 30px to account for padding. */
+}
+
+/* List */
+
+.edit-post-visual-editor ul:not(.wp-block-gallery),
+.editor-block-list__block ul:not(.wp-block-gallery),
+.block-library-list ul,
+.edit-post-visual-editor ol,
+.editor-block-list__block ol,
+.block-library-list ol,
+.block-library-list .editor-rich-text__tinymce {
+	margin: 0 0 20px 15px;
+    padding: 0 0 0 15px;
+}
+
+.edit-post-visual-editor ul:not(.wp-block-gallery),
+.editor-block-list__block ul:not(.wp-block-gallery),
+.block-library-list ul {
+	list-style: disc;
+}
+
+.edit-post-visual-editor ol,
+.editor-block-list__block ol,
+.block-library-list ol {
+	list-style: decimal;
+}
+
+/* Alignments */
+
+.edit-post-visual-editor .alignleft {
+	margin-right: 30px;
+}
+
+.edit-post-visual-editor .alignright {
+	margin-left: 30px;
+}
+
+/* Captions */
+
+.edit-post-visual-editor [class^="wp-block-"] figcaption {
+	display: block;
+	margin: 10px 0 0;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+.edit-post-visual-editor [class^="wp-block-"]:not(.wp-block-gallery) figcaption {
+	color: #888;
+}
+
+/* 
+ * 03: Common Blocks
+ */
+
+/* Paragraph */
+
+.wp-block-paragraph.has-drop-cap:not(:focus)::first-letter {
+	font-size: 5em;
+	margin-top: 0.125em;
+}
+
+/* Gallery */
+
+.edit-post-visual-editor .wp-block-gallery,
+.editor-block-list__block .wp-block-gallery {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+/* Quote */
+
+.wp-block-quote.is-style-large, 
+.wp-block-quote.is-large,
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	margin: 20px 30px;
+	padding: 0 20px;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border-left: 5px solid #2e64e6;
+}
+
+.wp-block-quote cite,
+.wp-block-quote footer,
+.wp-block-quote .wp-block-quote__citation {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #888;
+	line-height: 1.5;
+}
+
+.wp-block-quote.is-style-large cite,
+.wp-block-quote.is-large cite,
+.wp-block-quote.is-style-large footer,
+.wp-block-quote.is-large footer,
+.wp-block-quote.is-style-large .wp-block-quote__citation,
+.wp-block-quote.is-large .wp-block-quote__citation {
+	font-size: 18px;
+}
+
+.wp-block-quote > :last-child {
+	margin-bottom: 0;
+}
+
+/* 
+ * 04: Formatting
+ */
+
+/* Code */
+
+.wp-block-code {
+	padding: 0;
+	border: 0;
+}
+
+.wp-block-code .editor-plain-text {
+	padding: 5px 10px;
+	font-family: Menlo, Consolas, monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	background-color: #f5f5f5;
+    border: 0;
+}
+
+/* Classic */
+
+.wp-block-freeform.block-library-rich-text__tinymce blockquote {
+	border-left: 5px solid #2e64e6;
+	margin: 20px 30px;
+	padding: 0 20px;
+	color: #444;
+}
+
+/* Pullquote */
+
+.wp-block-pullquote {
+	margin: 20px 0;
+    padding: 0;
+    color: #444;
+    border: 0;
+}
+
+.editor-styles-wrapper .wp-block-pullquote blockquote,
+.edit-post-visual-editor .wp-block-pullquote blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote .wp-block-pullquote__citation {
+	margin-top: 10px;
+	font-size: 14px;
+	text-transform: none;
+	color: #888;
+	line-height: 1.5;
+}
+
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
+	font-size: 16px;
+}
+
+/* Verse */
+
+.edit-post-visual-editor .wp-block-verse,
+.edit-post-visual-editor .wp-block-verse pre {
+	padding: 0;
+	background-color: transparent;
+}
+
+/* Table */
+
+.editor-block-list__block table.wp-block-table th,
+.editor-block-list__block table.wp-block-table td {
+	padding: 0;
+}
+
+.wp-block-table__cell-content {
+	padding: 10px;	
+}
+
+/* 
+ * 05: Layout Elements
+ */
+
+/* Buttons */
+
+.wp-block-button__link {
+	padding: 5px 20px;
+	background: #222;
+	color: #fff;
+	font-weight: 700;
+	-webkit-border-radius: 128px;
+	border-radius: 128px;
+}
+
+/* Media & Text */
+
+.wp-block-media-text *:last-child {
+	margin-bottom: 0;
+}
+
+/* Separator */
+
+.edit-post-visual-editor .wp-block-separator {
+	border: 0;
+}
+
+.edit-post-visual-editor .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	height: 4px;
+	max-width: 100px;
+}
+
+/* 
+ * 06: Widget Blocks
+ */
+ 
+ /* Archives, Categories & Latest Posts */
+
+.edit-post-visual-editor [data-align="center"] .wp-block-archives,
+.edit-post-visual-editor [data-align="center"] .wp-block-categories ul,
+.edit-post-visual-editor [data-align="center"] .wp-block-latest-posts {
+	list-style-position: inside;
+}
+
+/* Latest Comments */
+
+.edit-post-visual-editor .wp-block-latest-comments__comment-meta {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.edit-post-visual-editor .wp-block-latest-comments__comment-excerpt p {
+	font-size: 14px;
+}
+
+.edit-post-visual-editor .wp-block-latest-comments__comment-excerpt p:last-child {
+	margin-bottom: 0;
+}
